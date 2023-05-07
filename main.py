@@ -51,4 +51,4 @@ while True:
     print(Fore.RESET)
     get_cpu_usage()
     print(Fore.RESET)
-    time.sleep(0.15)
+    time.sleep(0.25)
