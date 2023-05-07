@@ -40,7 +40,7 @@ def get_cpu_usage():
 while True:
     os.system("cls")
     print(color +
-          """_______                                         
+          """    _______                                         
     __  __ \____  _______  _________ ______ _______ 
     _  / / /__  |/_/__  / / /__  __ `/_  _ \__  __ \\
     / /_/ / __>  <  _  /_/ / _  /_/ / /  __/_  / / /
@@ -51,4 +51,4 @@ while True:
     print(Fore.RESET)
     get_cpu_usage()
     print(Fore.RESET)
-    time.sleep(0.25)
+    time.sleep(0.15)
