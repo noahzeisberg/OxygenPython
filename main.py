@@ -1,4 +1,5 @@
 import os
+import time
 
 import psutil
 from colorama import init, Back, Fore
@@ -36,16 +37,18 @@ def get_cpu_usage():
     print(bars(round(processor_usage)))
 
 
-print(color +
-      """_______                                         
-__  __ \____  _______  _________ ______ _______ 
-_  / / /__  |/_/__  / / /__  __ `/_  _ \__  __ \\
-/ /_/ / __>  <  _  /_/ / _  /_/ / /  __/_  / / /
-\____/  /_/|_|  _\__, /  _\__, /  \___/ /_/ /_/ 
-                /____/   /____/                 
-""" + Fore.RESET)
-get_memory_usage()
-print(Fore.RESET)
-get_cpu_usage()
-print(Fore.RESET)
-os.system("pause")
+while True:
+    os.system("cls")
+    print(color +
+          """_______                                         
+    __  __ \____  _______  _________ ______ _______ 
+    _  / / /__  |/_/__  / / /__  __ `/_  _ \__  __ \\
+    / /_/ / __>  <  _  /_/ / _  /_/ / /  __/_  / / /
+    \____/  /_/|_|  _\__, /  _\__, /  \___/ /_/ /_/ 
+                    /____/   /____/                 
+    """ + Fore.RESET)
+    get_memory_usage()
+    print(Fore.RESET)
+    get_cpu_usage()
+    print(Fore.RESET)
+    time.sleep(0.25)
